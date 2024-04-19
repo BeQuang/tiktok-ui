@@ -53,7 +53,7 @@
         top: var(--search-top-spacer);
         right: var(--search-button-width);
         width: 1px;
-        height: calc(var(--search-height) - var(--search-top-spacer)*2);
+        height: calc(var(--search-height) - var(--search-top-spacer) * 2);
         background-color: rgba(22, 24, 35, 0.12);
     }
 

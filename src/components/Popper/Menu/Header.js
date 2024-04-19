@@ -3,17 +3,17 @@ import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 import classNames from 'classnames/bind';
 import styles from './Menu.module.scss';
 
-const cx = classNames.bind(styles)
+const cx = classNames.bind(styles);
 
 function Header({ title, onBack }) {
     return (
-       <header className={cx('header')}>
+        <header className={cx('header')}>
             <button className={cx('back-btn')} onClick={onBack}>
-                <FontAwesomeIcon icon={faChevronLeft}/>    
+                <FontAwesomeIcon icon={faChevronLeft} />
             </button>
             <h4 className={cx('header-title')}>{title}</h4>
-       </header>
-    )
+        </header>
+    );
 }
 
 export default Header;
