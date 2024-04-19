@@ -27,6 +27,7 @@ import AccountItem from '~/components/AccountItem';
 import Menu from '~/components/Popper/Menu';
 
 const cx = classNames.bind(styles);
+const url_avatar = 'https://cdn.wallpapersafari.com/7/99/xqcUFv.jpg';
 
 const MENU_ITEMS = [
     {
@@ -155,11 +156,7 @@ function Header() {
 
                     <Menu items={currentUser ? userMenu : MENU_ITEMS} onChange={handleMenuChange}>
                         {currentUser ? (
-                            <img
-                                className={cx('user-avatar')}
-                                alt="Bùi Thành Quang"
-                                src="https://scontent.fsgn2-7.fna.fbcdn.net/v/t39.30808-1/276989690_704919490885010_2770990797051644460_n.jpg?stp=cp0_dst-jpg_p40x40&_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=BFaziS9RihwAX-Pc85S&_nc_ht=scontent.fsgn2-7.fna&oh=00_AfB95I-1TClLBWiyMHmovVo8wCxiVcIDHQPRk_--E-XSAw&oe=654FDF22"
-                            />
+                            <img className={cx('user-avatar')} alt="Bùi Thành Quang" src={url_avatar} />
                         ) : (
                             <button className={cx('more-btn')}>
                                 <FontAwesomeIcon icon={faEllipsisVertical} />

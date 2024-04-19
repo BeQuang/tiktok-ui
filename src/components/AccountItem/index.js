@@ -4,15 +4,12 @@ import classNames from 'classnames/bind';
 import styles from './AccountItem.module.scss';
 
 const cx = classNames.bind(styles);
+const url_avatar = 'https://wallpapercave.com/wp/wp7477583.jpg';
 
 function AccountItem() {
     return (
         <div className={cx('wrapper')}>
-            <img
-                className={cx('avatar')}
-                src="https://scontent.fsgn1-1.fna.fbcdn.net/v/t39.30808-1/384410177_1442199996508976_395539110022152227_n.jpg?stp=cp0_dst-jpg_p40x40&_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_ohc=C8Tq_8wu8XEAX91Nk7y&_nc_ht=scontent.fsgn1-1.fna&oh=00_AfAQiNdntq5zdhCjYJPxm9CdfDsZ-4Q7ezBRHQJUF1OjuA&oe=6548C688"
-                alt="Hoaa"
-            />
+            <img className={cx('avatar')} src={url_avatar} alt="Hoaa" />
             <div className={cx('info')}>
                 <h4 className={cx('name')}>
                     <span>Nguyen Van A</span>
