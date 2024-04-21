@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 import classNames from 'classnames/bind';
 import styles from './AccountItem.module.scss';
+import Image from '~/components/Images';
 
 const cx = classNames.bind(styles);
 const url_avatar = 'https://wallpapercave.com/wp/wp7477583.jpg';
@@ -9,7 +10,7 @@ const url_avatar = 'https://wallpapercave.com/wp/wp7477583.jpg';
 function AccountItem() {
     return (
         <div className={cx('wrapper')}>
-            <img className={cx('avatar')} src={url_avatar} alt="Hoaa" />
+            <Image className={cx('avatar')} src={url_avatar} alt="Hoaa" />
             <div className={cx('info')}>
                 <h4 className={cx('name')}>
                     <span>Nguyen Van A</span>
